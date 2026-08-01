@@ -125,8 +125,12 @@ export async function getContent(): Promise<SiteContent> {
 
   // First run against an empty database — seed it from data/content.json.
   const seed = await loadSeedContent();
+
   try {
-    await collection.insertOne({ _id: DOC_ID, ...seed });
+    await collection.insertOne({
+      _id: DOC_ID,
+      ...seed,
+    } as StoredDocument);
   } catch (err) {
     // Two requests can race to seed on a cold start; if another request
     // already inserted the document, MongoDB reports a duplicate key
@@ -136,18 +140,28 @@ export async function getContent(): Promise<SiteContent> {
   }
 
   const finalDoc = await collection.findOne({ _id: DOC_ID });
+
   if (finalDoc) {
     const { _id, ...content } = finalDoc;
     return content;
   }
-  // Extremely unlikely fallback (e.g. the doc was deleted between the
-  // insert race and this read) — still return usable content.
+
+  // Extremely unlikely fallback
   return seed;
 }
 
 export async function saveContent(content: SiteContent): Promise<void> {
   const collection = await getCollection();
-  await collection.replaceOne({ _id: DOC_ID }, { _id: DOC_ID, ...content }, { upsert: true });
+
+  await collection.updateOne(
+    { _id: DOC_ID },
+    {
+      $set: content,
+    },
+    {
+      upsert: true,
+    }
+  );
 }
 
 export async function getCategory(id: string): Promise<Category | undefined> {
