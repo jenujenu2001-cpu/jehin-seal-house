@@ -1,0 +1,69 @@
+{
+  "business": {
+    "name": "Jehin Seal House",
+    "tagline": "Jaffna's print shop for every idea worth making real",
+    "description": "From a school tie to a hundred acrylic name boards, Jehin Seal House prints, presses, and finishes it in-house — no job too small, no order too large.",
+    "address": "No. 62, Stanley Road, Jaffna, Sri Lanka",
+    "phone": "+94 77 999 4737",
+    "whatsapp": "94779994737",
+    "email": "hello@jehinsealhouse.lk",
+    "mapEmbedUrl": "https://www.google.com/maps?q=No.+62+Stanley+Road+Jaffna+Sri+Lanka&output=embed",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=No.+62+Stanley+Road+Jaffna+Sri+Lanka",
+    "hours": [
+      { "day": "Monday – Friday", "time": "8.30 AM – 6.30 PM" },
+      { "day": "Saturday", "time": "9.00 AM – 5.00 PM" },
+      { "day": "Sunday", "time": "Closed" }
+    ],
+    "social": {
+      "facebook": "https://facebook.com/jehinsealhouse",
+      "instagram": "https://instagram.com/jehinsealhouse"
+    }
+  },
+  "hero": {
+    "eyebrow": "Printing & Custom Gifts, Jaffna",
+    "headline": "Every seal, stamp, and print — made properly, made here.",
+    "subheadline": "School uniforms to wedding invitations, jerseys to acrylic signage — Jehin Seal House is the one shop in Jaffna that prints, presses, and finishes it all under one roof.",
+    "ctaPrimary": "Chat on WhatsApp",
+    "ctaSecondary": "Browse Services"
+  },
+  "whyChooseUs": [
+    { "title": "26+ services, one shop", "detail": "From school badges to vehicle number plates, it's all made in-house — no outsourcing, no delays." },
+    { "title": "Straight to WhatsApp", "detail": "Send your design, get a quote, confirm your order — no forms, no waiting for a callback." },
+    { "title": "Built for schools & bulk orders", "detail": "Ties, badges, name tags and jerseys, printed to size and delivered on schedule for the term ahead." },
+    { "title": "Proper finishing, every time", "detail": "Laser precision, colour-true digital printing, and hand-finished acrylic and vinyl work." }
+  ],
+  "testimonials": [
+    { "name": "Nilani R.", "role": "School Administrator", "quote": "Ordered ties, badges and name tags for the whole school in one go. Every batch matched perfectly." },
+    { "name": "Suresh K.", "role": "Small Business Owner", "quote": "My shop's banners, stickers and vehicle plate all came from Jehin. Quick replies on WhatsApp, quicker delivery." },
+    { "name": "Ahalya T.", "role": "Bride-to-be", "quote": "Our wedding invitation cards were beautifully printed and ready two days early." }
+  ],
+  "categories": [
+    { "id": "school-tie-printing", "name": "School Tie Printing", "theme": "school", "description": "House-colour and crest ties, woven or printed to your school's exact pattern.", "images": [] },
+    { "id": "school-badge", "name": "School Badge", "theme": "school", "description": "Embroidered and printed badges for blazers, caps, and uniforms.", "images": [] },
+    { "id": "school-name-tags", "name": "School Name Tags", "theme": "school", "description": "Durable, iron-on and pin-back name tags in bulk for the new term.", "images": [] },
+    { "id": "school-accessories", "name": "School Accessories", "theme": "school", "description": "Belts, ribbons, and uniform accessories printed and finished to order.", "images": [] },
+    { "id": "digital-printing", "name": "Digital Printing", "theme": "print", "description": "Full-colour digital prints on paper, card, and specialty stock.", "images": [] },
+    { "id": "laser-printing", "name": "Laser Printing", "theme": "print", "description": "Crisp, precise laser prints for documents, designs, and fine detail work.", "images": [] },
+    { "id": "water-bottle-printing", "name": "Water Bottle Printing", "theme": "gift", "description": "Personalised bottles for schools, teams, and corporate giveaways.", "images": [] },
+    { "id": "mug-printing", "name": "Mug Printing", "theme": "gift", "description": "Photo mugs and custom designs, printed and heat-pressed in-house.", "images": [] },
+    { "id": "tea-cup-printing", "name": "Tea Cup Printing", "theme": "gift", "description": "Custom tea cups for gifting, events, and everyday use.", "images": [] },
+    { "id": "t-shirt-printing", "name": "T-Shirt Printing", "theme": "gift", "description": "Single tees to full team orders, printed in any size run.", "images": [] },
+    { "id": "jersey-printing", "name": "Jersey Name & Number Printing", "theme": "gift", "description": "Team jerseys with names and numbers, sized and finished for match day.", "images": [] },
+    { "id": "logo-printing", "name": "Logo Printing", "theme": "creative", "description": "Your logo, printed cleanly onto merchandise, signage, and stationery.", "images": [] },
+    { "id": "flag-printing", "name": "Flag Printing", "theme": "print", "description": "Event, school, and promotional flags in durable weather-ready fabric.", "images": [] },
+    { "id": "key-chain-printing", "name": "Key Chain Printing", "theme": "gift", "description": "Custom keychains for gifts, events, and business giveaways.", "images": [] },
+    { "id": "vehicle-number-plate", "name": "Vehicle Number Plate", "theme": "print", "description": "Regulation number plates, made and fitted correctly the first time.", "images": [] },
+    { "id": "acrylic-name-boards", "name": "Acrylic Name Boards", "theme": "creative", "description": "Laser-cut acrylic signage for homes, offices, and shopfronts.", "images": [] },
+    { "id": "photo-frame", "name": "Photo Frame", "theme": "photo", "description": "Framed prints for portraits, family photos, and keepsakes.", "images": [] },
+    { "id": "stamp-making", "name": "Stamp Making", "theme": "print", "description": "Self-inking and traditional stamps for business and personal use.", "images": [] },
+    { "id": "logo-design", "name": "Logo Design", "theme": "creative", "description": "Original logo design and artwork, ready for print or digital use.", "images": [] },
+    { "id": "sticker-printing", "name": "Sticker Printing", "theme": "print", "description": "Die-cut and sheet stickers in any shape, size, or finish.", "images": [] },
+    { "id": "vinyl-printing", "name": "Vinyl Printing", "theme": "print", "description": "Vinyl decals and cut graphics for vehicles, walls, and windows.", "images": [] },
+    { "id": "banner-printing", "name": "Banner Printing", "theme": "print", "description": "Large-format banners for shops, events, and announcements.", "images": [] },
+    { "id": "flex-printing", "name": "Flex Printing", "theme": "print", "description": "Weather-resistant flex boards for outdoor advertising.", "images": [] },
+    { "id": "invitation-card-printing", "name": "Invitation Card Printing", "theme": "gift", "description": "Wedding and event invitations, printed and finished by hand.", "images": [] },
+    { "id": "id-card-printing", "name": "ID Card Printing", "theme": "school", "description": "PVC ID cards for schools, staff, and organisations.", "images": [] },
+    { "id": "certificate-printing", "name": "Certificate Printing", "theme": "school", "description": "Award and completion certificates on premium certificate stock.", "images": [] },
+    { "id": "customized-gifts", "name": "Customized Gifts", "theme": "gift", "description": "Personalised gift items for every occasion, made to your idea.", "images": [] }
+  ]
+}

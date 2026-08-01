@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4C8063"/>
+      <stop offset="100%" stop-color="#0F1512"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="rgba(255,255,255,0.12)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="640" fill="url(#g)"/>
+  <rect width="800" height="640" fill="url(#dots)"/>
+  <g transform="translate(400,270)" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path transform="translate(-90,-70) scale(6)" d="M6 9V4h12v5M4 9h16v7H4zM6 14h12v6H6z"/>
+  </g>
+  <text x="400" y="440" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="rgba(255,255,255,0.92)" font-weight="600">Print &amp; Signage</text>
+  <text x="400" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" letter-spacing="2" fill="rgba(255,255,255,0.6)">JEHIN SEAL HOUSE — SAMPLE PHOTO</text>
+</svg>

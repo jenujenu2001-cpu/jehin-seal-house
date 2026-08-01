@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f6f4ec;
+  color: #16241f;
+}
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #4c8063;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Halftone "proof sheet" texture used across the site, a nod to the print floor */
+.texture-halftone {
+  background-image: radial-gradient(rgba(22, 36, 31, 0.14) 1px, transparent 1.4px);
+  background-size: 10px 10px;
+}
+
+.texture-halftone-light {
+  background-image: radial-gradient(rgba(22, 36, 31, 0.07) 1px, transparent 1.4px);
+  background-size: 10px 10px;
+}
+
+/* Leaf-vein line texture for nature-inspired panels */
+.texture-leaf {
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(76, 128, 99, 0.18), transparent 42%),
+    radial-gradient(circle at 85% 75%, rgba(196, 106, 68, 0.12), transparent 45%),
+    radial-gradient(circle at 50% 100%, rgba(183, 201, 174, 0.35), transparent 55%);
+}
+
+.paper-grain {
+  position: relative;
+}
+
+.paper-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: radial-gradient(rgba(22, 36, 31, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+/* Category theme accents — each service group gets its own quiet backdrop */
+.theme-school { background: linear-gradient(180deg, #eef3ea 0%, #f6f4ec 100%); }
+.theme-gift { background: linear-gradient(180deg, #f7ece3 0%, #f6f4ec 100%); }
+.theme-print { background: linear-gradient(180deg, #eceef2 0%, #f6f4ec 100%); }
+.theme-creative { background: linear-gradient(180deg, #eef0e6 0%, #f6f4ec 100%); }
+.theme-photo { background: linear-gradient(180deg, #f1ede4 0%, #f6f4ec 100%); }
+
+.eyebrow {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+/* ===== Premium image-section utilities ===== */
+
+/* Standard dark overlay for readability over full-bleed photography */
+.img-overlay-dark {
+  background: linear-gradient(180deg, rgba(15, 21, 18, 0.75) 0%, rgba(15, 21, 18, 0.55) 45%, rgba(15, 21, 18, 0.88) 100%);
+}
+
+.img-overlay-soft {
+  background: linear-gradient(180deg, rgba(15, 21, 18, 0.35) 0%, rgba(15, 21, 18, 0.15) 40%, rgba(15, 21, 18, 0.65) 100%);
+}
+
+.img-overlay-card {
+  background: linear-gradient(180deg, rgba(15, 21, 18, 0.05) 0%, rgba(15, 21, 18, 0.85) 100%);
+}
+
+.img-overlay-tint {
+  background: linear-gradient(160deg, rgba(47, 91, 69, 0.82) 0%, rgba(15, 21, 18, 0.78) 100%);
+}
+
+/* Glassmorphism chip / panel used over photo backgrounds */
+.glass-panel {
+  background: rgba(246, 244, 236, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(246, 244, 236, 0.18);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Infinite horizontal marquee track — used for the showcase strip and logo/skills row */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-track-slow {
+  animation-duration: 70s;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Shimmer sweep, e.g. across a highlighted price/badge */
+.shimmer-text {
+  background: linear-gradient(90deg, #e0a458 0%, #f6f4ec 50%, #e0a458 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Floating particle dots for the hero */
+.particle {
+  position: absolute;
+  border-radius: 9999px;
+  background: rgba(224, 164, 88, 0.55);
+  filter: blur(0.5px);
+}
+
+/* Card lift + zoom on hover, applied to the wrapping element */
+.hover-lift {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -18px rgba(15, 21, 18, 0.35);
+}
+
+.hover-zoom-img {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group:hover .hover-zoom-img {
+  transform: scale(1.08);
+}
+
+/* Fixed-viewport parallax-feel background (cheap, no JS) */
+.bg-fixed-cover {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .bg-fixed-cover {
+    background-attachment: scroll;
+  }
+}
