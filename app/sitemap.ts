@@ -4,7 +4,7 @@ import { getContent } from "@/lib/content";
 export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.jehinsealhouse.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.jehinsealhouse.lk";
   const content = await getContent();
 
   const staticRoutes: MetadataRoute.Sitemap = [
